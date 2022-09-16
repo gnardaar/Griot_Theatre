@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+
+.nav-items{
+    list-style: none;
+    color: white;
+    display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+position: relative;
+color: white;
+
+li a{
+    font-size: ;
+}
+
+
+.nav-items li:nth-child(1){
+    margin-left: 12px;
+    padding-right: 100px;
+
+    
+}
