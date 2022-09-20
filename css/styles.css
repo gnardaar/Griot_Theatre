@@ -94,28 +94,61 @@ h1 {
     grid-template-columns: repeat(3, 400px);
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
     padding: 30px;
-    
 }
 
 .event-image {
     width: 200px;
     display: flex;
-    padding: 0px 25%;
+    justify-self: start;
+
 
 }
 
-.event-info {
-    display: grid;
-    grid-template-rows: repeat(4, 50%);
+.event-info>div {
+    display: flex;
+flex-direction: column;
+justify-content: flex-start;
+
 }
 
 .button {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 20px;
     width: 80px;
     white-space: nowrap;
+    background-color: rgb(252, 182, 50);
+    color: whitesmoke;
+    padding: 15px;
+    
+}
+
+.info-button-container{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,100%);
+    background-color: black;
+    height: 250px;
+}
+
+.menu-items{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.map img{
+    height: 200px;
+
+}
+
+.menu-info{
+    color: white;
 }
