@@ -2,7 +2,7 @@
 
 * {
     font-family: "Roboto";
-    max-width: 100%;
+    max-width: auto;
 }
 
 header {
@@ -86,7 +86,7 @@ h1 {
     flex-direction: column;
     margin: 40px 0px;
     padding: 20px 0px;
-    
+
 }
 
 .event-content-container {
@@ -107,8 +107,8 @@ h1 {
 
 .event-info>div {
     display: flex;
-flex-direction: column;
-justify-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
 
 }
 
@@ -122,33 +122,63 @@ justify-content: flex-start;
     background-color: rgb(252, 182, 50);
     color: whitesmoke;
     padding: 15px;
-    
+
 }
 
-.info-button-container{
+.info-button-container {
     display: flex;
     justify-content: center;
 }
 
-footer{
+footer {
     padding: 30px;
     display: grid;
-    grid-template-columns: repeat(4,100%);
+    grid-template-columns: repeat(4, 100%);
     background-color: black;
     height: 250px;
+    align-items: center;
+    justify-content: center;
 }
 
-.menu-items{
+.menu-items {
     display: flex;
-justify-content: center;
-align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.map img{
+#map img {
     height: 200px;
-
+    display: flex;
+    align-content: center;
 }
 
-.menu-info{
+.menu-grid-items {
     color: white;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    width: max-width(100%, 80rem);
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: start;
+}
+
+.menu-items li {
+    padding: 12px 0px;
+}
+
+.grid-item-title {
+    font-size: 45px;
+}
+
+.menu-grid-items a {
+    color: aliceblue;
+    text-decoration: none;
 }
